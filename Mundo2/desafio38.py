@@ -1,6 +1,6 @@
 '''
 @Author Mateus R. Moreira
-30/08/2019
+30/07/2019
 
 Faça um programa que peça dois números 
 E diga qual deles é o maior, o menor ou se são iguais
