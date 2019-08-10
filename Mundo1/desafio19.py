@@ -11,7 +11,7 @@ from random import randint
 alunos = ['João', 'Maria', 'Pedrinho', 'Joaquina']
 escolhido = alunos[randint(0,3)]
 
-print(f'Quem vai apagar o quadro será {escolhido}')
+print(f'\033[4;33;44mQuem vai apagar o quadro será {escolhido}\033[m')
 
 
 '''

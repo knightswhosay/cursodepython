@@ -1,23 +1,17 @@
 '''
-@author Mateus R. Moreira
-@date 03/07/2019
+@Author Mateus R. Moreira
+@date 31/07/2019
 
-Faça um programa que leia um ano qualquer 
-E mostre se ele é Bissexto
+Escreva um programa que diga se um ano é bissexto ou não
 '''
-from datetime import date
-year = int(input('Em que ano estamos? '))
-rest = f'O Ano de {year} não é um ano bissexto'
+from datetime import datetime
+ano = int(input('Escreva um ano, Coloque 0 para o ano atual '))
 
-if year == 0:
-   year =  date.today().year
-   rest = f'O Ano de {year} não é um ano bissexto'
-elif year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
-   rest = f'O Ano de {year} é um ano bissexto'
+if ano == 0:
+    ano = datetime.now().year
 
-print(rest)
+if ano%4 == 0 and ano%100!=0 or ano%400==0:
+    print(f'{ano} é ano bissexto')
+else:
+    print(f'{ano} não é ano bissexto')
 
-'''
-Info: Estes exercícios são tirados do 
-curso em video de python. 
-'''
