@@ -14,7 +14,7 @@ for n in range(1,8):
         maior += 1
     else:
         menor +=1
-
+        
 print(f'''
 Temos {maior} pessoas maior de idade
 
