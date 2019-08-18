@@ -1,17 +1,22 @@
 '''
 @author Mateus R. Moreira
-@date 16/08/2019
+@date 17/08/2019
 
 Escreva a sequencia de fibonacci
 '''
+print('='*30)
+print('Sequencia de Fibonacci')
+n = int(input('quantos termos você quer calcular? '))
 
-fib = int(input('Escreva um número para ver sua sequencia de fibonacci '))
-g = fib
-while g > 0:
-    if fib <= 2:
-       print('-> 1 ', end='') 
-       break
-    print(f'0 -> 1 -> 1 -> {fib} ', end='')   
-    fib = (fib - 1) + (fib - 2)
-    g -= 1
+t1 = 0
+t2 = 1
+t3 = t1+t2
+print(f'{t1} -> {t2}', end='')
+
+while n >= 2:
+    t3 = t1+t2
+    print(f'-> {t3}', end='')
+    t1 = t2
+    t2 = t3
+    n -= 1
 print('\n')
